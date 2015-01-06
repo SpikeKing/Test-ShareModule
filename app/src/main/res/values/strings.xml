@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Test-ShareModule</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="share_module_prompt_info">分享模块</string>
+    <string name="share_module_share_sina_weibo_button">新浪微博</string>
+    <string name="share_module_share_tencent_wechat_button">微信</string>
+    <string name="share_module_share_tencent_wechat_moments_button">朋友圈</string>
+    <string name="share_module_share_tencent_qq_button">QQ</string>
+    <string name="share_module_share_tencent_qq_zone_button">QQ空间</string>
+    <string name="share_module_share_tencent_weibo_button">腾讯微博</string>
+
+</resources>

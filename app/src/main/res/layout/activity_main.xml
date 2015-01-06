@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/share_module_prompt_info_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/share_module_prompt_info"/>
+
+    <EditText
+        android:id="@+id/share_module_share_message_edit_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/share_module_prompt_info_view"
+        android:ems="10"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/share_module_share_sina_weibo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/share_module_share_message_edit_text"
+        android:text="@string/share_module_share_sina_weibo_button"/>
+
+    <Button
+        android:id="@+id/share_module_share_tencent_wechat_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_module_share_message_edit_text"
+        android:layout_toEndOf="@+id/share_module_share_sina_weibo_button"
+        android:layout_toRightOf="@+id/share_module_share_sina_weibo_button"
+        android:text="@string/share_module_share_tencent_wechat_button"/>
+
+    <Button
+        android:id="@+id/share_module_share_tencent_wechat_moments_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_module_share_message_edit_text"
+        android:layout_toEndOf="@+id/share_module_share_tencent_wechat_button"
+        android:layout_toRightOf="@+id/share_module_share_tencent_wechat_button"
+        android:text="@string/share_module_share_tencent_wechat_moments_button"/>
+
+    <Button
+        android:id="@+id/share_module_share_tencent_qq_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/share_module_share_sina_weibo_button"
+        android:text="@string/share_module_share_tencent_qq_button"/>
+
+    <Button
+        android:id="@+id/share_module_share_tencent_qq_zone_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_module_share_tencent_wechat_button"
+        android:layout_toEndOf="@+id/share_module_share_tencent_qq_button"
+        android:layout_toRightOf="@+id/share_module_share_tencent_qq_button"
+        android:text="@string/share_module_share_tencent_qq_zone_button"/>
+
+    <Button
+        android:id="@+id/share_module_share_tencent_weibo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_module_share_tencent_wechat_moments_button"
+        android:layout_toEndOf="@+id/share_module_share_tencent_qq_zone_button"
+        android:layout_toRightOf="@+id/share_module_share_tencent_qq_zone_button"
+        android:text="@string/share_module_share_tencent_weibo_button"/>
+
+</RelativeLayout>
