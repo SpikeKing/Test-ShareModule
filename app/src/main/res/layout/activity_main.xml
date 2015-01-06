@@ -25,6 +25,7 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/share_module_prompt_info_view"
+        android:text="@string/share_module_default_share_message"
         android:ems="10"
         android:inputType="textMultiLine"/>
 
