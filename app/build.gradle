@@ -5,16 +5,39 @@ android {
     buildToolsVersion "21.0.0"
 
     defaultConfig {
-        applicationId "com.example.wcl.test_sharemodule"
+        // 新浪微博
+//        applicationId "com.sina.weibo.sdk.demo"
+
+        // 微信、朋友圈
+        applicationId "me.chunyu.ChunyuDoctor"
+
         minSdkVersion 15
         targetSdkVersion 20
         versionCode 1
         versionName "1.0"
     }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 新浪微博的keystore
+//    signingConfigs {
+//        debug {
+//            storeFile file('/Users/wangchenlong/Exercises/Test-ShareModule/sina_weibo_test.keystore')
+//        }
+//    }
+
+    // 微信、朋友圈的keystore
+    signingConfigs {
+        debug {
+            storeFile file('/Users/wangchenlong/Exercises/Test-ShareModule/SpringRainKey')
+            storePassword "chunyu"
+            keyAlias "chunyu"
+            keyPassword "chunyu"
         }
     }
 }
@@ -22,4 +45,9 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:20.+'
+    compile files('libs/sina_weibo_sdk_v301.jar')
+    compile files('libs/sina_weibo_sdk_v301_so.jar')
+    compile files('libs/tencent_qq_mta_sdk_1.6.2.jar')
+    compile files('libs/tencent_qq_open_sdk_r4547.jar')
+    compile files('libs/tencent_weichat_libammsdk.jar')
 }
