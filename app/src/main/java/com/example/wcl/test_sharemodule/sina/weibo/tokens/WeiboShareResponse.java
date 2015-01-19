@@ -1,4 +1,4 @@
-package com.example.wcl.test_sharemodule.sina.weibo;
+package com.example.wcl.test_sharemodule.sina.weibo.tokens;
 
 import android.app.Activity;
 import android.widget.Toast;
@@ -12,11 +12,11 @@ import com.sina.weibo.sdk.constant.WBConstants;
  * <p/>
  * Created by wangchenlong on 15-1-13.
  */
-public class SinaWeiboShareResponse extends Activity implements IWeiboHandler.Response {
+public class WeiboShareResponse extends Activity implements IWeiboHandler.Response {
 
     private Activity mActivity;
 
-    public SinaWeiboShareResponse(Activity activity) {
+    public WeiboShareResponse(Activity activity) {
         mActivity = activity;
     }
 

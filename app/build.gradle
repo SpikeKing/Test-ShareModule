@@ -31,7 +31,7 @@ android {
 //        }
 //    }
 
-    // 微信、朋友圈的keystore
+    // 春雨医生的keystore
     signingConfigs {
         debug {
             storeFile file('/Users/wangchenlong/Exercises/Test-ShareModule/SpringRainKey')

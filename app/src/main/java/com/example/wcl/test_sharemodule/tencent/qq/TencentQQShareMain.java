@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.wcl.test_sharemodule.tencent.qq.tokens.TencentQQConstants;
 import com.tencent.connect.share.QQShare;
 import com.tencent.connect.share.QzoneShare;
 import com.tencent.tauth.IUiListener;
@@ -25,7 +26,7 @@ public class TencentQQShareMain {
     @SuppressWarnings("unused")
     public TencentQQShareMain(Activity activity) {
         mActivity = activity;
-        sTencent = Tencent.createInstance("1101774620", activity);
+        sTencent = Tencent.createInstance(TencentQQConstants.APP_ID, activity);
     }
 
     @SuppressWarnings("unused")
